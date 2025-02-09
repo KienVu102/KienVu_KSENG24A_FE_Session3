@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="KienVu">
+        <table>
+            <tr>
+                <td><label for="name">Họ và tên:</label></td>
+                <td><input type="text" name="name" id="name"><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="date">Ngày sinh:</label></td>
+                <td><input type="date" name="date" id="date"><br></td>
+            </tr>
+
+            <tr>
+                <td> <label for="gender">Giới tính:</label></td>
+                <td><input type="radio" name="gender" id="gender" value="Male">Nam
+                <input type="radio" name="gender" id="gender" value="Female">Nữ</td>
+            </tr>
+
+            <tr>
+                <td><label for="telephone">Số điện thoại:</label></td>
+                <td> <input type="tel"
+                name="telephone"
+                id="telephone"
+                pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+                placeholder="0987-654-321"><br></td>
+            </tr>
+            
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email"><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="Company name">Tên công ty:</label></td>
+                <td><input type="text" name="Company name" id="Company name"><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="role in the company">Vai trò trong công ty:</label></td>
+                <td><select name="role in the company" id="role in the company">
+            <option value="employee">Thành viên</option>
+            <option value="department head">Trưởng phòng</option>
+            <option value="deputy director">Phó giám đốc</option>
+            <option value="general director">Tổng giám đốc</option>
+        </select><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="Company size">Quy mô công ty:</label></td>
+                <td><select name="Company size" id="Company size">
+            <option value="small business">Doanh nghiệp nhỏ</option>
+            <option value="medium enterprise">Doanh nghiệp trung bìnhbình</option>
+            <option value="big business">Doanh nghiệp lớn</option>
+        </select><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="Company industry">Ngành nghề công ty:</label></td>
+                <td><input type="text" name="Company industry" id="Company industry"><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="reason">Lí do tham gia câu lạc bộ:</label></td>
+                <td><textarea name="reason" id="reason"></textarea></td>
+            </tr>
+            
+            <tr>
+                <td><label for="Leadership experience">Kinh nghiệm lãnh đạo:</label></td>
+                <td><textarea name="Leadership experience" id="Leadership experience"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="Goals of joining the club">Mục tiêu khi tham gia câu lạc bộ:</label></td>
+                <td><textarea name="Goals of joining the club" id="Goals of joining the club"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="event">Chương trình sự kiện muốn tham gia:</label></td>
+                <td><input type="checkbox" name="event" value="Networking">Networking
+                    <input type="checkbox" name="event" value="Workshops">Workshops
+                    <input type="checkbox" name="event" value="Seminar">Hội thảo
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="sign">Đăng ký nhận bản tin:</label></td>
+                <td><input type="checkbox" name="sign" value="Yes">Có</td>
+            </tr>
+            
+        </table>            
+        <button>Đăng ký hội viên</button>
+    </form>
+</body>
+</html>

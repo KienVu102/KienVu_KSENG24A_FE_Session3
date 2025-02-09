@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="KienVu">
+        <table>
+            <tr>
+                <td><label for="name">Họ và tên:</label></td>
+                <td><input type="text" name="name" id="name"><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email"><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="date">Ngày sinh:</label></td>
+                <td><input type="date" name="date" id="date"><br></td>
+            </tr>
+
+            <tr>
+                <td> <label for="gender">Giới tính:</label></td>
+                <td><input type="radio" name="gender" id="gender" value="Male">Nam
+                <input type="radio" name="gender" id="gender" value="Female">Nữ</td>
+            </tr>
+
+            <tr>
+                <td><label for="telephone">Số điện thoại:</label></td>
+                <td> <input type="tel"
+                name="telephone"
+                id="telephone"
+                pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+                placeholder="0987-654-321"><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="specialized">Chuyên ngành:</label></td>
+                <td><input type="text" name="specialized" id="specialized"><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="year">Năm nhập học:</label></td>
+                <td><input type="numer" name="year" id="year" min="1" max="3000"><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="score">Điểm GPA:</label></td>
+                <td><input type="number" id="score" name="score" min="1" max="10" step="1"><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="adress">Địa chỉ:</label></td>
+                <td><textarea name="adress" id="adress"></textarea><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="class">Lớp học:</label></td>
+                <td><select name="class" id="class">
+            <option value="class1">Lớp 1</option>
+            <option value="class2">Lớp 2</option>
+            <option value="class3">Lớp 3</option>
+            <option value="class4">Lớp 4</option>
+            <option value="class5">Lớp 5</option>
+        </select><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="register">Ngày đăng ký học:</label></td>
+                <td><input type="date" name="register" id="register"></td>            
+            </tr>
+        </table>            
+        <button>Đăng ký</button>
+    </form>
+</body>
+</html>
